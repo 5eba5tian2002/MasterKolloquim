@@ -1,0 +1,92 @@
+\documentclass[11pt]{beamer}
+
+% ============================
+%   BEAMER THEME & COLORS
+% ============================
+\usetheme{Madrid}
+\usecolortheme{default}
+
+% ============================
+%   SPRACHE & ENCODING
+% ============================
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+% ============================
+%   MATHE & SYMBOLE
+% ============================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{gensymb}
+
+% ============================
+%   GRAFIKEN & TIKZ
+% ============================
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, shapes.geometric, mindmap, trees}
+
+% ============================
+%   TABELLEN
+% ============================
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+
+% ============================
+%   HYPERREF
+% ============================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=cyan
+}
+
+% ============================
+%   EIGENE KOMMANDOS
+% ============================
+\newcommand*{\quelle}[1]{\par\raggedleft\footnotesize Quelle:~#1}
+
+% ============================
+%   TITELSEITE
+% ============================
+\title{Beschreibung von Tiefpassfiltern\\im Zeit- und Frequenzbereich}
+\subtitle{Masterkolloquium Elektrotechnik}
+\author{Sebastian Pasinski}
+\institute{TH Aschaffenburg}
+\date{\today}
+
+% ============================
+%   DOKUMENT
+% ============================
+\begin{document}
+
+% Titelseite
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\begin{frame}{Gliederung der Präsentation}
+    \tableofcontents
+\end{frame}
+
+
+\section{Definition Tiefpass}
+\input{sections/Definition}
+
+
+
+
+\section{Tiefpass im Zeitbereich}
+\input{sections/zeitbereich}
+
+\section{Tiefpass im Frequenzbereich}
+\input{sections/frequenzbereich}
+
+\section{Fazit}
+%\input{sections/fazit}
+
+\end{document}
