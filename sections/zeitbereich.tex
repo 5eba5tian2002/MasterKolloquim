@@ -1,29 +1,102 @@
     \begin{frame}{Tiefpass im Zeitbereich}
         \begin{itemize}
+        \item Beschreibung über Differentialgleichung
         \item Impulsantwort
-        \item Sprungantwort
         \item Faltung
+        \item Sprungantwort
+        
     \end{itemize}
+\end{frame}
+
+
+\begin{frame}{Systembeschreibung mit DGL}
+
+\begin{minipage}{0.58\textwidth}
+    Maschengleichung
+    \[
+        -u_{\mathrm{e}}(t) + u_{\mathrm{R}}(t) + u_{\mathrm{C}}(t) = 0
+    \]
+
+    % Stromgleichung
+
+% Ohmsches Gesetz
+
+% Kondensatorgesetz
+
+%\subsection*{Einsetzen in die Maschengleichung}
+
+%\subsection*{Differentialgleichung des RC-Tiefpasses}
+
+    Differentialgleichung
+    \[
+        RC\, \frac{\mathrm{d}u_{\mathrm{C}}(t)}{\mathrm{d}t} + u_{\mathrm{C}}(t) = u_{\mathrm{e}}(t)
+    \]
+
+    %Integration beider Seiten:
+
+
+%Umgestellt nach der Ausgangsspannung:
+\end{minipage}
+\hfill
+\begin{minipage}{0.38\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{images/RC-Schaltung.png}
+
+    {\footnotesize RC‑Tiefpass-Schaltung \par}
+    {\footnotesize Quelle: \cite{wikipediaRCGlied:2026} \par}
+\end{minipage}
+
+Berechnungen von DGL oft komplex und aufwendig
+
 \end{frame}
 
 \begin{frame}{Impulsantwort}
 
+    \centering
+    \includegraphics[width=\textwidth]{images/ImpulsantwortRC.png}
+    {\footnotesize RC‑Tiefpass-Schaltung \par}
+
+\end{frame}
+
+
+\begin{frame}{Darstellung von Signalen als Impulsfolge}
+    
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{images/ImpulsantwortRC.png}
-        \caption{Impulsantwort eines RC-Tiefpasses}
+        \includegraphics[width=0.8\textwidth]{images/SinusDirac.png}
+        \caption{Sinus als Dirac-Impulsfolge}
     \end{figure}
     
+\end{frame}
 
+\begin{frame}{Übertragungsfunktion und Impulsantwort}
 
+    Impulsantwort ist die Inverse Laplace-Transformation der Übertragungsfunktion:
+\[
+H(s) = \mathcal{L}\{h(t)\}
+\]
+
+\[
+h(t) = \mathcal{L}^{-1}\{H(s)\}
+\]
 
 \end{frame}
 
-\begin{frame}{Faltung}
- 
-    
+
+\begin{frame}{Faltung im Zeitkontinuierlichen Bereich}
+    Berechnung Ausgangssignal mit Eingangssignal und Impulsantwort: 
+
+\[
+y(t) = (x * h)(t)
+\]
+
+\[
+y(t) = \int_{-\infty}^{\infty} x(\tau)\, h(t - \tau)\, d\tau
+\]
 
 \end{frame}
+
+
 
 
 \begin{frame}{Sprungantwort}

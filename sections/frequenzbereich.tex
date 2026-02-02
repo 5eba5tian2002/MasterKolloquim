@@ -1,3 +1,93 @@
+\begin{frame}{Beschreibung im Frequenzbereich: Übertragungsfunktion}
+
+
+\begin{columns}[T]  % T = top aligned
+    % Linke Spalte
+    \begin{column}{0.55\textwidth}
+        \[
+        \frac{U_\text{c}}{U_\text{e}} = \frac{Z_C}{Z_R + Z_C}
+        \]
+
+        \[
+        \frac{U_\text{c}}{U_\text{e}} = \frac{\frac{1}{j\omega C}}{R + \frac{1}{j\omega C}}
+        \]
+
+        \[
+        \frac{U_\text{c}}{U_\text{e}} = \frac{1}{1 + j\omega RC}
+        \]
+        \center
+
+        Spannungsverstärkung abhängig von der Frequenz
+    \end{column}
+
+    % Rechte Spalte
+    \begin{column}{0.55\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.8\textwidth]{images/ÜFunc_Schaltung.png}
+            {\footnotesize \cite{ÜfuncRC:2026} \par}
+            \caption{RC-Schaltung}
+        \end{figure}
+    \end{column}
+\end{columns}
+
+\end{frame}
+
+\begin{frame}{Grenzfrequenz}
+
+\begin{itemize}
+    \item Bei der Grenzfrequenz fällt die Ausgangsspannung auf $1/\sqrt{2}$ des Eingangswerts.
+    \item Dadurch halbiert sich die Leistung ($P \propto U^2$).
+    \item Dieser Punkt entspricht dem \(-3\,\mathrm{dB}\)-Pegel.
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Grenzfrequenz aus der Übertragungsfunktion (RC-Tiefpass)}
+
+\begin{enumerate}
+    \item Betrag bilden:
+    \[
+    |H(j\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
+    \]
+
+    \item $-3\,\mathrm{dB}$-Bedingung anwenden:
+    \[
+    |H(j\omega_c)| = \frac{1}{\sqrt{2}}
+    \]
+
+    \item Gleichsetzen und lösen:
+    \[
+    \frac{1}{\sqrt{1 + (\omega_c RC)^2}} = \frac{1}{\sqrt{2}}
+    \quad\Rightarrow\quad
+    \omega_c = \frac{1}{RC}
+    \]
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{Amplitudengang eines RC-Tiefpasses}
+
+\begin{itemize}
+    \item Konstante Verstärkung im Tieffrequenzbereich ($|H| \approx 1$).
+    \item Abfall ab der Grenzfrequenz $f_c = \frac{1}{2\pi RC}$.
+    \item Bei $f_c$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$).
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Phasengang eines RC-Tiefpasses}
+
+\begin{itemize}
+    \item Phase beginnt bei $0^\circ$ für niedrige Frequenzen.
+    \item Bei der Grenzfrequenz: Phase = $-45^\circ$.
+    \item Für hohe Frequenzen nähert sich die Phase $-90^\circ$.
+\end{itemize}
+
+\end{frame}
+
+
+
 \begin{frame}{Tiefpass im Frequenzbereich}
     \begin{itemize}
         \item Beschreibung über die Übertragungsfunktion:
@@ -24,25 +114,6 @@
         \item Phasengang
         \item Bodediagramm
     \end{itemize}
-\end{frame}
-
-\begin{frame}{Übertragungsfunktion eines Tiefpasses}
-
-  \begin{itemize}
-    \item Beschreibt das Verhältnis von Ausgangs- zu Eingangssignal im Frequenzbereich.
-      \[
-        H(s) = \frac{Y(s)}{X(s)}
-      \]
-  \end{itemize}
-
-  U2 zu U1 bei ....
-
-
- 
-
-
-  
-
 \end{frame}
 
 

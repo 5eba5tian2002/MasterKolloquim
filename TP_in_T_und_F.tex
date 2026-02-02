@@ -44,17 +44,28 @@
     linkcolor=blue,
     urlcolor=cyan
 }
+% ============================
+%   Zitieren
+% ============================
+% zum Zitieren 
+ \usepackage{cite}
+ %\usepackage{natbib}
+ \usepackage{harvard}
+
 
 % ============================
 %   EIGENE KOMMANDOS
 % ============================
-\newcommand*{\quelle}[1]{\par\raggedleft\footnotesize Quelle:~#1}
+
+\newcommand*{\quelle}[1]{\par\raggedleft\footnotesize Source:~#1}
+% Zum Beschriften von Abbildungen
+
 
 % ============================
 %   TITELSEITE
 % ============================
 \title{Beschreibung von Tiefpassfiltern\\im Zeit- und Frequenzbereich}
-\subtitle{Masterkolloquium Elektrotechnik}
+\subtitle{Masterkolloquium Elektro-und Informationstechnik}
 \author{Sebastian Pasinski}
 \institute{TH Aschaffenburg}
 \date{\today}
@@ -73,22 +84,20 @@
     \tableofcontents
 \end{frame}
 
-
 \section{Definition Tiefpass}
 \input{sections/Definition}
-
-
-
-
-
-
-\section{Tiefpass im Zeitbereich}
-\input{sections/zeitbereich}
 
 \section{Tiefpass im Frequenzbereich}
 \input{sections/frequenzbereich}
 
+\section{Tiefpass im Zeitbereich}
+\input{sections/zeitbereich}
+
 \section{Fazit}
 %\input{sections/fazit}
+
+\section{Literatur}
+\bibliography{literatur}
+	\bibliographystyle{agsm}
 
 \end{document}
