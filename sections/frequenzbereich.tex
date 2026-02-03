@@ -69,13 +69,57 @@
 
 \begin{frame}{Amplitudengang eines RC-Tiefpasses}
 
+Amplitudengang RC-TP:
+        \[
+            |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
+        \]
+
+
 \begin{itemize}
-    \item Konstante Verstärkung im Tieffrequenzbereich ($|H| \approx 1$).
-    \item Abfall ab der Grenzfrequenz $f_c = \frac{1}{2\pi RC}$.
-    \item Bei $f_c$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$).
+    \item Verstärkung/ Dämpfung von Ein- zu Ausgang
+ 
+    
+    \item Bei $f_g$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$).
 \end{itemize}
 
-\cite{FreqGang:2026}
+\cite{FreqGang:2026} \cite{Schürfer:2019}
+
+\end{frame}
+
+\begin{frame}{Amplitudengang eines RC-Tiefpasses}
+
+\begin{columns}
+
+% Linke Spalte
+\begin{column}{0.45\textwidth}
+
+Amplitudengang RC-TP:
+\[
+    |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
+\]
+
+\begin{itemize}
+    \item Verstärkung/Dämpfung von Ein- zu Ausgang
+    \item Bei $f_g$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$)
+\end{itemize}
+
+\cite{FreqGang:2026} \cite{Schürfer:2019}
+
+\end{column}
+
+% Rechte Spalte
+    \begin{column}{0.45\textwidth}
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.5\textwidth]{images/AmplitudenGang.png}
+            {\footnotesize \cite{ÜfuncRC:2026} \par}
+            \caption{RC-Schaltung}
+        \end{figure}
+    \end{column}
+\end{columns}
+
+
+
 
 \end{frame}
 
@@ -103,10 +147,7 @@ Phasenverschiebung von Ein- zu Ausgangssignal
         \[
             \omega_c = \frac{1}{RC}
         \]
-        \item Amplitudengang:
-        \[
-            |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
-        \]
+       
         \item Phasengang:
         \[
             \varphi(\omega) = -\arctan(\omega RC)
