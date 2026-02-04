@@ -88,36 +88,72 @@ Amplitudengang RC-TP:
 
 \begin{frame}{Amplitudengang eines RC-Tiefpasses}
 
-\begin{columns}
+\begin{columns}[T]  % T = top aligned
+    % Linke Spalte
+    \begin{column}{0.30\textwidth}
 
-% Linke Spalte
-\begin{column}{0.45\textwidth}
-
-Amplitudengang RC-TP:
+\center
+      Dämpfung von Ein-zu Ausgang 
+            
 \[
     |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
 \]
 
-\begin{itemize}
-    \item Verstärkung/Dämpfung von Ein- zu Ausgang
-    \item Bei $f_g$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$)
-\end{itemize}
+ bei fg : Aplitude fällt auf -3 dB
 
-\cite{FreqGang:2026} \cite{Schürfer:2019}
 
-\end{column}
 
-% Rechte Spalte
-    \begin{column}{0.45\textwidth}
-        \begin{figure}
+
+    \end{column}
+
+    % Rechte Spalte
+    \begin{column}{0.55\textwidth}
+       
+            \begin{figure}
             \centering
-            \includegraphics[width=0.5\textwidth]{images/AmplitudenGang.png}
-            {\footnotesize \cite{ÜfuncRC:2026} \par}
-            \caption{RC-Schaltung}
+            \includegraphics[width=\textwidth]{images/AmplitudenGang.png}
+   
+            \caption{Amp.gang RC-TP}
         \end{figure}
+    
     \end{column}
 \end{columns}
 
+\end{frame}
+
+
+\begin{frame}{Phasengang eines RC-Tiefpasses}
+
+\begin{columns}[T]  % T = top aligned
+    % Linke Spalte
+    \begin{column}{0.30\textwidth}
+
+\center
+      Phasenverschiebung von Ein-zu Ausgang
+            
+\[
+    |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
+\]
+
+ bei fg : Aplitude fällt auf -45°
+
+
+
+
+    \end{column}
+
+    % Rechte Spalte
+    \begin{column}{0.55\textwidth}
+       
+            \begin{figure}
+            \centering
+            \includegraphics[width=\textwidth]{images/PhasengangRC.png}
+   
+            \caption{Ph.gang RC-TP}
+        \end{figure}
+    
+    \end{column}
+\end{columns}
 
 
 
