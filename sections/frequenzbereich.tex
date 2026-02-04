@@ -69,25 +69,6 @@
 
 \begin{frame}{Amplitudengang eines RC-Tiefpasses}
 
-Amplitudengang RC-TP:
-        \[
-            |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
-        \]
-
-
-\begin{itemize}
-    \item Verstärkung/ Dämpfung von Ein- zu Ausgang
- 
-    
-    \item Bei $f_g$: Amplitude fällt auf $1/\sqrt{2}$ ($-3\,\mathrm{dB}$).
-\end{itemize}
-
-\cite{FreqGang:2026} \cite{Schürfer:2019}
-
-\end{frame}
-
-\begin{frame}{Amplitudengang eines RC-Tiefpasses}
-
 \begin{columns}[T]  % T = top aligned
     % Linke Spalte
     \begin{column}{0.30\textwidth}
@@ -100,8 +81,6 @@ Amplitudengang RC-TP:
 \]
 
  bei fg : Aplitude fällt auf -3 dB
-
-
 
 
     \end{column}
@@ -118,6 +97,7 @@ Amplitudengang RC-TP:
     
     \end{column}
 \end{columns}
+\cite{TietzeSchenk:2019}
 
 \end{frame}
 
@@ -132,10 +112,14 @@ Amplitudengang RC-TP:
       Phasenverschiebung von Ein-zu Ausgang
             
 \[
-    |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
-\]
+            \varphi(\omega) = -\arctan(\omega RC)
+        \]
 
- bei fg : Aplitude fällt auf -45°
+ bei fg : Verschiebung von -45°
+
+% Niederige Frequenzen kaum verschiebung
+% hohe Frequenzen verschiebung nähert sich 90°
+% Phase hinkt hinterher, Kapazität Spannung zu spät
 
 
 
@@ -155,51 +139,14 @@ Amplitudengang RC-TP:
     \end{column}
 \end{columns}
 
-
-
-\end{frame}
-
-\begin{frame}{Phasengang eines RC-Tiefpasses}
-
-Phasenverschiebung von Ein- zu Ausgangssignal
-
-\begin{itemize}
-    \item Phase beginnt bei $0^\circ$ für niedrige Frequenzen.
-    \item Bei der Grenzfrequenz: Phase = $-45^\circ$.
-    \item Für hohe Frequenzen nähert sich die Phase $-90^\circ$.
-\end{itemize}
+\cite{TietzeSchenk:2019}
 
 \end{frame}
 
-
-
-\begin{frame}{Tiefpass im Frequenzbereich}
-    \begin{itemize}
-        \item Beschreibung über die Übertragungsfunktion:
-        \[
-            H(\omega) = \frac{1}{1 + j\omega RC}
-        \]
-        \item Grenzfrequenz:
-        \[
-            \omega_c = \frac{1}{RC}
-        \]
-       
-        \item Phasengang:
-        \[
-            \varphi(\omega) = -\arctan(\omega RC)
-        \]
-        \item Tiefpass dämpft hohe Frequenzen und lässt niedrige passieren
-    \end{itemize}
-     \begin{itemize}
-        \item Übertragungsfunktion
-        \item Amplitudengang
-        \item Phasengang
-        \item Bodediagramm
-    \end{itemize}
-\end{frame}
 
 
 \begin{frame}{Bodediagramm}
+Darstellung beider Verhalten auf einen Blick
 
     \begin{figure}
         \centering
