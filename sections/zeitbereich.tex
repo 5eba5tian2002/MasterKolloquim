@@ -1,15 +1,9 @@
-    \begin{frame}{Tiefpass im Zeitbereich}
-        \begin{itemize}
-        \item Beschreibung über Differentialgleichung
-        \item Impulsantwort
-        \item Faltung
-        \item Sprungantwort
-        
-    \end{itemize}
-\end{frame}
 
 
-\begin{frame}{Systembeschreibung mit DGL}
+
+\begin{frame}{Tiefpass im Zeitbereich}
+
+ Systembeschreibung mit DGL
 
 \begin{minipage}{0.58\textwidth}
     Maschengleichung
@@ -47,6 +41,16 @@
 \end{minipage}
 
 Berechnungen von DGL oft komplex und aufwendig
+
+\end{frame}
+
+\begin{frame}{Sprungantwort}
+
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.8\textwidth]{images/SprungantwortRC.png}
+        \caption{Sprungsantwort eines RC-Tiefpasses}
+    \end{figure}
 
 \end{frame}
 
@@ -94,20 +98,30 @@ y(t) = (x * h)(t)
 y(t) = \int_{-\infty}^{\infty} x(\tau)\, h(t - \tau)\, d\tau
 \]
 
-\end{frame}
 
 
 
+\cite{Faltung:2026}
 
-\begin{frame}{Sprungantwort}
 
-    \begin{figure}
+\begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{images/SprungantwortRC.png}
-        \caption{Sprungsantwort eines RC-Tiefpasses}
+        \includegraphics[width=0.8\textwidth]{images/Faltung.png}
+        
+        {\footnotesize Graphische Faltung \par}
+    {\footnotesize Quelle: \cite{GraphischeFaltung:2024} \par}
     \end{figure}
 
+%Signal spiegeln und verschiebern
+% beide signal multiplizieren und integrieren über alle Zeitpunkte
+
+
 \end{frame}
+
+
+
+
+
 
 
 
