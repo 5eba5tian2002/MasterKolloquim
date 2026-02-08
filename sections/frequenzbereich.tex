@@ -3,17 +3,11 @@
 
 \begin{columns}[T]  % T = top aligned
     % Linke Spalte
+
     \begin{column}{0.55\textwidth}
+
         \[
         \frac{U_\text{c}}{U_\text{e}} = \frac{Z_C}{Z_R + Z_C}
-        \]
-
-        \[
-        \frac{U_\text{c}}{U_\text{e}} = \frac{\frac{1}{j\omega C}}{R + \frac{1}{j\omega C}}
-        \]
-
-        \[
-        \frac{U_\text{c}}{U_\text{e}} = \frac{1}{1 + j\omega RC}
         \]
 
        \[
@@ -22,8 +16,6 @@
 \]
 
         \center
-
-        Spannungsverstärkung abhängig von der Frequenz
        \cite{TietzeSchenk:2019}
     \end{column}
 
@@ -99,17 +91,22 @@ Kann aus Übertragungsfunktion berechnet werden:
     % Linke Spalte
     \begin{column}{0.30\textwidth}
 
-\center
-      Dämpfung von Ein-zu Ausgang 
+\centering
+      Dämpfung von Ein- zu Ausgang 
             
-\[
-    |H(\omega)| = \frac{1}{\sqrt{1 + (\omega RC)^2}}
-\]
 
- bei fg : Amplitude fällt auf -3 dB
 
+
+
+\[ A_{\mathrm{dB}}(\omega) = 20 \log_{10}\!\left( |H(j\omega)| \right) \]
+
+
+
+Bei \( \omega_\mathrm{g} \): Amplitude fällt auf \(-3\,\mathrm{dB}\)
 
     \end{column}
+
+
 
     % Rechte Spalte
     \begin{column}{0.55\textwidth}
